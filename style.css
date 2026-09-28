@@ -1,0 +1,288 @@
+/* Remove default space */
+* {
+    margin: 2px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 50px;
+    margin-top: 10px;
+
+    background-color: #222;
+    border-radius: 20px;
+}
+
+
+/* Logo */
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Hero Section */
+.hero {
+    height: 500px;
+
+    background-color: lightblue;
+    border-radius: 30px;
+    margin-top: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    gap: 15px;
+
+}
+
+
+.hero h1 {
+    font-size: 45px;
+}
+
+
+.hero p {
+    font-size: 20px;
+}
+
+
+/* Buttons */
+button {
+    padding: 12px 25px;
+
+    background-color: #222;
+    color: white;
+
+    border: none;
+    border-radius: 50px;
+
+    cursor: pointer;
+}
+
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+
+    gap: 20px;
+
+    padding: 60px 50px;
+}
+
+
+/* Feature Boxes */
+.feature {
+    width: 30%;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+    background-color: #aaa7aaAD;
+}
+
+
+/* Feature Icons */
+.icon {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+
+.feature h2 {
+    margin-bottom: 10px;
+}
+
+
+/* About Section */
+.about {
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 60px 50px;
+
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+
+.about-text {
+    width: 50%;
+}
+
+
+.about-text h2 {
+    margin-bottom: 15px;
+}
+
+
+.about img {
+    width: 50%;
+    border-radius: 20px;
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 60px 50px;
+
+    text-align: center;
+    
+}
+
+
+.contact h2 {
+    margin-bottom: 30px;
+    
+}
+
+
+/* Form */
+form {
+    max-width: 500px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+    
+}
+
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: rgb(215, 214, 214);
+}
+
+
+textarea {
+    height: 120px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+    border-radius: 20px;
+}
+
+
+footer a {
+    color: white;
+
+    margin: 10px;
+
+    text-decoration: none;
+}
+
+
+/* Mobile Design */
+@media (max-width: 768px) {
+
+    /* Make header vertical */
+    header {
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 20px;
+    }
+
+
+    /* Make navigation vertical */
+    nav {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    /* Smaller hero heading */
+    .hero h1 {
+        font-size: 32px;
+    }
+
+
+    /* Stack features */
+    .features {
+        flex-direction: column;
+
+        padding: 40px;
+    }
+
+
+    .feature {
+        width: 100%;
+    }
+
+
+    /* Stack about section */
+    .about {
+        flex-direction: column;
+
+        padding: 40px 20px;
+    }
+
+
+    .about-text {
+        width: 100%;
+    }
+
+
+    .about img {
+        width: 100%;
+    }
+
+
+    /* Contact */
+    .contact {
+        padding: 40px 20px;
+    }
+
+}
